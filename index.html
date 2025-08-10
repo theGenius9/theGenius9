@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>theGenius9's page</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      h1 {
+        color: #0077cc;
+      }
+      button {
+        margin: 10px;
+        padding: 10px;
+        background-color: #ffcc00;
+        border: none;
+        cursor: pointer;
+      }
+      body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    </style>
+
+  </head>
+  <body>
+    <h1>hi!</h1>
+    <p>my username for practically everything is theGenius9 or thegenius334 (my old username for everything)</p>
+    <h6>lol tiny text</h6>
+    <a href='https://www.youtube.com/@thegenius334'>this is my youtube!</a>
+    <button onclick='foreverLoop()'>dont click this will trap you in a forever loop</button>
+    <h3>also this is one of my first github pages</h3>
+    <button onclick='exertUselessInfo()'>dispense useless info</button>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <h2>that's all bye</h2>
+    <script>
+      function foreverLoop(){
+        alert('hey y u click')
+        alert('only way out is to close this tab lol')
+        let x = 0;
+        while(x < 100){
+          alert('this is a loop');
+          let regret = prompt('do u regret pressing that button?');
+          alert(`${regret}? I thought so.`);
+          alert(`you have ${100-x} loops left until this is over.`)
+          x++;
+        }
+      }
+      function exertUselessInfo(){
+        alert('blah blah blah blah blah')
+        alert('blah blah blah blah blah')
+        alert('blah blah blah blah blah')
+        alert('blah blah blah blah blah')
+        alert('blah blah blah blah blah')
+      }
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+      }
+    </script>
+  </body>
+</html>
